@@ -27,19 +27,23 @@ const MySkills = () => {
                         Here are my skills
                     </p>
                 </motion.div>
-                <div className="mt-16 md:mt-0">
-                    {isAboveMediumScreens? (
-                        <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-                before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full
-                before:border-2 before: border-blue before:z-[-1]">
+                <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
+            {isAboveMediumScreens ? 
+            (
+                <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
+                before:w-full before:h-full before:border-2 before: border-blue before:z-[-1]">
                     <img alt="skills" 
                     src="assets/skills-image.png" 
-                    className="z-10"/>
+                    className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
+                    max-w-[400px] md:max-w-[600px]"/>
                 </div>
-                    ):(
-                        <img alt="skills" className="z-10" src="assets/skills-image.png"/>
-                    )}
-                </div>
+            ):(
+                <img alt="profile" 
+                    src="assets/manoj" 
+                    className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
+                    max-w-[400px] md:max-w-[600px]"/>
+            )}
+            </div>
             </div>
             {/* Skills */}
             <div className="md:flex md:justify-between mt-16 gap-32">
