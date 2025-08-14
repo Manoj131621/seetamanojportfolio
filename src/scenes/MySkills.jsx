@@ -13,7 +13,7 @@ const MySkills = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once:true, amount:0.5}}
-                transition={{delay:0.4, duration:0.5}}
+                transition={{duration:0.5}}
                 variants={{
                 hidden: { opacity:0, x:-50},
                 visible: { opacity: 1,x:0}
@@ -30,7 +30,7 @@ const MySkills = () => {
                 <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
             {isAboveMediumScreens ? 
             (
-                <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
+                <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
                 before:w-full before:h-full before:border-2 before: border-blue before:z-[-1]">
                     <img alt="skills" 
                     src="assets/skills-image.png" 
@@ -38,8 +38,8 @@ const MySkills = () => {
                     max-w-[400px] md:max-w-[600px]"/>
                 </div>
             ):(
-                <img alt="profile" 
-                    src="assets/manoj" 
+                <img alt="skills" 
+                    src="assets/skills-image.png" 
                     className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
                     max-w-[400px] md:max-w-[600px]"/>
             )}
@@ -53,10 +53,10 @@ const MySkills = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once:true, amount:0.5}}
-                transition={{delay:0.4, duration:0.5}}
+                transition={{ duration:0.5}}
                 variants={{
-                hidden: { opacity:0, x:50},
-                visible: { opacity: 1,x:0}
+                hidden: { opacity:0, y:50},
+                visible: { opacity: 1,y:0}
                 }}
                 >
                     <div className="relative h-32">

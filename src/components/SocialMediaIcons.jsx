@@ -25,7 +25,7 @@ const SocialMediaIcons = () => {
              target="_blank"
              rel="nonreferrer"
             >
-                <img alt="facebook-link" src="../assets/facebook"/>
+                <img alt="facebook-link" src="../assets/facebook.png"/>
             </a>
 
             <a
